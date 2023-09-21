@@ -10,11 +10,11 @@ Building an ETL pipeline using Python, Pandas, and either Python dictionary meth
     - Extract and transform the 'crowdfunding.xlsx' Excel data to create a category DataFrame that has the following columns:
         - A "category_id" column that has entries going sequentially from "cat1" to "catn", where n is the number of unique categories
         - A "category" column that contains only the category titles
-        - Export the category DataFrame as 'category.csv' (Located in our *[Resources](Resources)* folder)
+        - Export the category DataFrame as 'category.csv' (Located in our *[Resources](Resources/Exported CSVs/category.csv)* folder)
     - Extract and transform the 'crowdfunding.xlsx' Excel data to create a subcategory DataFrame that has the following columns:
         - A "subcategory_id" column that has entries going sequentially from "subcat1" to "subcat*n*", where *n* is the number of unique subcategories
         - A "subcategory" column that contains only the subcategory titles
-        - Export the subcategory DataFrame as 'subcategory.csv' (Located in our *[Resources](Resources)* folder)
+        - Export the subcategory DataFrame as 'subcategory.csv' (Located in our *[Resources](Resources/Exported CSVs/subcategory.csv)* folder)
 1. Create the Campaign DataFrame
     - Extract and transform the 'crowdfunding.xlsx' Excel data to create a campaign DataFrame has the following columns:
         - The "cf_id" column
@@ -31,7 +31,7 @@ Building an ETL pipeline using Python, Pandas, and either Python dictionary meth
         - The "deadline" column, renamed to "end_date" and with the UTC times converted to the 'datetime' format
         - The "category_id" column, with unique identification numbers matching those in the "category_id" column of the category DataFrame
         - The "subcategory_id" column, with the unique identification numbers matching those in the "subcategory_id" column of the subcategory DataFrame
-        - Export the campaign DataFrame as 'campaign.csv' (Located in our *[Resources](Resources)* folder)
+        - Export the campaign DataFrame as 'campaign.csv' (Located in our *[Resources](Resources/Exported CSVs/campaign.csv)* folder)
 1. Create the Contacts DataFrame
     - Use Python dictionary methods to extract and transform the data from the 'contacts.xlsx' Excel data:
         - Import the contacts.xlsx file into a DataFrame.
@@ -41,7 +41,7 @@ Building an ETL pipeline using Python, Pandas, and either Python dictionary meth
             - Add the values for each row to a new list.
             - Create a new DataFrame that contains the extracted data.
             - Split each "name" column value into a first and last name, and place each in a new column.
-            - Clean and export the DataFrame as 'contacts.csv' (Located in our *[Resources](Resources)* folder)
+            - Clean and export the DataFrame as 'contacts.csv' (Located in our *[Resources](Resources/Exported CSVs/contacts.csv)* folder)
 1. Create the Crowdfunding Database
     - Inspect the four CSV files, and then sketch an ERD of the tables. ![ER Diagram](SQL/ER_Diagram.png)
         - Use the information from the ERD to create a table schema for each CSV file.
