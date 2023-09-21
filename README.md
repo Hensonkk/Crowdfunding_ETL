@@ -55,6 +55,7 @@ Building an ETL pipeline using Python, Pandas, and either Python dictionary meth
 ### **Database Schema**
 
 '''
+
 drop table if exists category;
 drop table if exists subcategory;
 drop table if exists contacts;
